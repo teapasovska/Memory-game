@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="gamepage.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h4 id="poeni">Your score:</h4>
+      <button id="startButton">Press for start</button>
+      <p id="timer">Time: 00:59</p>
+    </div>
+
+    <div class="game-container">
+      <div class="left">
+        <div class="game-text">
+          <h3>Let's play and <br />have fun!</h3>
+        </div>
+
+        <div class="left-decoration"></div>
+      </div>
+      <div class="card-board" id="cardContainer">
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/mcqueen.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/mcqueen.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/sally.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/sally.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/cruz.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/cruz.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/doc.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/doc.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/fillmore.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/fillmore.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/mater.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/mater.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/guido.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/guido.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/luigi.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+
+        <div class="card">
+          <div class="card-front">
+            <img class="front-face" src="images/luigi.png" />
+          </div>
+          <div class="back-face"><img src="images/back.png" /></div>
+        </div>
+      </div>
+
+      <div class="gifs">
+        <div class="animated-gif-4">
+          <img id="image-3" src="images/luigi.png" />
+        </div>
+        <div class="animated-gif-1">
+          <img id="image-1" src="images/mcqueen.png" />
+        </div>
+        <div class="animated-gif-2">
+          <img id="image-3" src="images/sally.png" />
+        </div>
+        <div class="animated-gif-3">
+          <img id="image-2" src="images/mater.png" />
+        </div>
+        <div class="animated-gif-5">
+          <img id="image-3" src="images/cruz.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="titlepage.html"><button class="exit-button">Exit</button></a>
+    </div>
+
+    <div id="victory" class="notification">You Win!</div>
+
+    <div id="lost" class="notification" style="background-color: #a893ad">
+      You Lost!
+    </div>
+
+    <script src="gamepage.js"></script>
+  </body>
+</html>

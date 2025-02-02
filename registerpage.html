@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="registerpage.css" />
+  </head>
+  <body>
+    <div>
+      <a href="titlepage.html" class="button"> Back to the home page</a>
+    </div>
+    <div>
+      <a href="titlepage.html" class="arrow">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    </div>
+    <br />
+    <form id="registerForm">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fname">First Name:</label>
+        <input
+          id="firstname"
+          type="text"
+          name="fname"
+          placeholder="Enter your first name"
+        />
+
+        <label for="lname">Last Name:</label>
+        <input
+          id="lastname"
+          type="text"
+          name="lname"
+          placeholder="Enter your last name"
+        />
+
+        <label for="email">Email:</label>
+        <input
+          id="emailadd"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Age</legend>
+        <input type="radio" name="age" id="under18" value="under18" />
+        <label for="under18">Under 18</label><br />
+
+        <input type="radio" name="age" id="above18" value="above18" />
+        <label for="above18">Above 18</label>
+      </fieldset>
+
+      <input type="submit" value="Submit" class="submit" />
+    </form>
+
+    <script src="registerpage.js"></script>
+  </body>
+</html>

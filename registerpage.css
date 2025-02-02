@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("gif/background.gif");
+  background-repeat: repeat;
+  margin-top: 2%;
+  font-family: Arial, sans-serif;
+  color: #4c4d48;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #eff0c1;
+  border: 2px solid #d9d9d9;
+  border-radius: 1vw;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+fieldset {
+  border: 2px solid #d9d9d9;
+  border-radius: 1vw;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+legend {
+  font-family: "Monoton", cursive;
+  font-size: 1.5rem;
+  color: #f6fab9;
+  text-shadow: 2px 2px 4px #4c4d48;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.submit {
+  background-color: #a893ad;
+  color: #eff0c1;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.submit:hover {
+  background-color: #78b79a;
+}
+
+.button {
+  border: 2px solid #f4f7c8;
+  border-radius: 5px;
+  color: #eff0c1;
+  background-color: #a893ad;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+  animation: image-anim 2s infinite ease-in-out alternate;
+  margin-top: 1%;
+}
+.button:hover {
+  background-color: #78b79a;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.arrow {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  form {
+    padding: 1rem;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .arrow {
+    display: inline-block;
+    border: 2px solid #f4f7c8;
+    border-radius: 5px;
+    color: #eff0c1;
+    background-color: #a893ad;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    margin-top: 1%;
+    text-decoration: none;
+  }
+
+  .arrow:hover {
+    background-color: #78b79a;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.error {
+  border-color: #ff4d4d;
+  background-color: #ffe6e6;
+}

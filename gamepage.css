@@ -1,0 +1,296 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #eff0c1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Header Styling */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 50px;
+  background-image: linear-gradient(to top, #eff0c1, #78b79a);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Main Game Container - Centering Content Vertically */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+  margin-block: 80px;
+  min-height: calc(100vh - 150px);
+  position: relative;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Game Text */
+.game-text {
+  position: absolute;
+  left: 6%;
+  top: 20%;
+  font-family: "DynaPuff", cursive;
+  font-size: 2rem;
+  color: #78b79a;
+  text-shadow: 3px 3px 2px #678287;
+  text-align: center;
+}
+
+/* Left Decoration */
+.left-decoration {
+  border: 1px solid #a893ad;
+  border-radius: 20%;
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  background-image: url("gif/leftgif.gif");
+  background-size: cover;
+}
+
+/* Card Board - Centering the content */
+.card-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 0px 0px 5px 5px #78b79a;
+  background-color: rgb(247, 227, 201);
+}
+
+.card {
+  width: calc(25% - 10px);
+  aspect-ratio: 1/1;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Card Flip Effect */
+.card.flip .front-face {
+  transform: rotateY(180deg);
+}
+
+.card.flip .back-face {
+  transform: rotateY(0deg);
+}
+
+/* Animated Elements */
+.animated-gif-1 {
+  right: 18%;
+  top: 7%;
+  position: absolute;
+  animation: bounce 3s infinite ease-in-out;
+}
+
+.animated-gif-2 {
+  right: 6.7%;
+  top: 35%;
+  position: absolute;
+  animation: bounce 3s infinite ease-in-out;
+  animation-delay: 1s;
+}
+
+.animated-gif-3 {
+  right: 17%;
+  top: 50%;
+  position: absolute;
+  animation: bounce 3s infinite ease-in-out;
+  animation-delay: 1.5s;
+}
+
+.animated-gif-4 {
+  right: 2%;
+  top: 2%;
+  position: absolute;
+  animation: bounce 3s infinite ease-in-out;
+  animation-delay: 2s;
+}
+
+.animated-gif-5 {
+  right: 2%;
+  top: 72%;
+  position: absolute;
+  animation: bounce 3s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  .gifs,
+  .left {
+    display: none;
+  }
+}
+
+#image-1 {
+  width: 12vw;
+  height: 12vw;
+}
+
+#image-2 {
+  width: 14vw;
+  height: 14vw;
+}
+
+#image-3 {
+  width: 12vw;
+  height: 12vw;
+  transform: scaleX(-1);
+}
+
+/* Score, Timer, and Start Button Styling */
+#poeni,
+#timer,
+#startButton {
+  font-family: Arial, sans-serif;
+  padding: 12px 24px;
+  margin: 2% 0;
+  background-color: #a893ad;
+  color: #eff0c1;
+  border: 2px solid #eff0c1;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+#startButton:hover {
+  background-color: #78b79a;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, #78b79a, #eff0c1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+/* Exit Button */
+.exit-button {
+  background-color: #a893ad;
+  color: #eff0c1;
+  border: 2px solid #eff0c1;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.exit-button:hover {
+  background-color: #78b79a;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Notification Styling */
+.notification {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #78b79a;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.notification.show {
+  display: block;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-board {
+    max-width: 90%;
+  }
+
+  #poeni,
+  #timer,
+  #startButton,
+  .exit-button {
+    font-size: small;
+    padding: auto;
+  }
+}
